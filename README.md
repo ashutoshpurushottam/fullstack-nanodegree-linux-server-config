@@ -50,7 +50,7 @@ To fix this, the hostname was added to the loopback address in the `/etc/hosts` 
 so that th first line now reads:
 `127.0.0.1 localhost ip-10-20-47-177`
 
-This solution was found on the Ubuntu Forms [here][1]
+This solution was found on the Ubuntu Forms [here][1].
 
 ## Disable root login
 Change the following line in the file `/etc/ssh/sshd_config`:
@@ -118,7 +118,7 @@ To check the status of the firewall, use:
 
 `sudo ufw status`
 
-## Install and configure Apache to serve a Python mod_wsgi application
+## Install Apache to serve a Python mod_wsgi application
 Install Apache:
 
 `sudo apt-get install apache2`
