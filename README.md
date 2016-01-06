@@ -2,11 +2,14 @@
 _Configuring a Linux server to host a web app securely._
 
 # Server details
-IP address: `52.11.206.40`
+IP address: ~~`52.11.206.40`~~
 
 SSH port: `2200`
 
-URL: `http://ec2-52-11-206-40.us-west-2.compute.amazonaws.com`
+URL: ~~`http://ec2-52-11-206-40.us-west-2.compute.amazonaws.com`~~
+
+_Note that since I have now graduated, the original server has been disabled. You might find
+something else there now, but what follows would apply when setting up a new server._
 
 # Configuration changes
 ## Add user
