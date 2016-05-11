@@ -73,15 +73,9 @@ Will now do all commands using the `grader` user, using `sudo` when required.
 
 ## Change timezone to UTC
 Check the timezone with the `date` command. This will display the current timezone after the time.
+If it's not UTC change it like this:
 
-Change the timezone with:
-
-`sudo dpkg-reconfigure tzdate`
-
-To change to UTC, select `None of the above` by pressing return, then select `UTC` and press return.
-Check the timezone again with the `date` command.
-
-This method was found on the Ubuntu Forms [here][2].
+`sudo timedatectl set-timezone UTC`
 
 ## Change SSH port from 22 to 2200
 Edit the file `/etc/ssh/sshd_config` and change the line `Port 22` to:
