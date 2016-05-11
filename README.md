@@ -358,8 +358,8 @@ APT::Periodic::Unattended-Upgrade "1";
 So the package list is updated daily and security updates will be downloaded and installed daily.
 Every week the local download archive will be cleaned.
 
-Unattended package installation can be monitiored by reviewing the `apt` histor log file located
-here: `/var/log/apt/history.log`.
+Unattended package installation can be monitiored by reviewing the log file located
+here: `/var/log/apt/unattended-upgrades/unattended-upgrades.log`.
 
 ## Monitor for Repeated Failed Login Attempts
 The program Fail2Ban will be used to block IP addresses from which unsuccessful login attempts
