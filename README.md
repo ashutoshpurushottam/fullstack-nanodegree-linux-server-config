@@ -424,6 +424,12 @@ actionunban = ufw delete deny from <ip> to any port 2200
 So Fail2Ban will insert a deny rule as the first rule from the relevant IP address for
 the custom SSH port 2200. After the 1800 second ban time, this rule will be deleted.
 
+To make the new settings take effect, stop and start the fail2ban service with:
+```
+sudo service fail2ban stop
+sudo service fail2ban start
+```
+
 ## System Monitoring
 [Glances][11] is a full-featured system monitor. It can also monitor processes. Install Glances with:
 
