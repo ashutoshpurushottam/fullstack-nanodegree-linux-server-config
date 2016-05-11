@@ -59,7 +59,13 @@ This solution was found on the Ubuntu Forms [here][1].
 
 ## Disable root login
 Change the following line in the file `/etc/ssh/sshd_config`:
+
 From `PermitRootLogin without-password` to `PermitRootLogin no`.
+
+Also, uncomment the following line so it reads:
+```
+PasswordAuthentication no
+```
 
 Do `service ssh restart` for the changes to take effect.
 
