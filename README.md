@@ -15,13 +15,17 @@ something else there now, but what follows would apply when setting up a new ser
 ## Add user
 Add user `grader` with command: `useradd -m -s /bin/bash grader`
 
-## Add user grader to sudoers
-Created a file called `grader` in `/etc/sudoers.d` with the contents:
-
-`grader ALL=(ALL) NOPASSWD:ALL`
+## Add user grader to sudo group
+Assuming your Linux distro has a `sudo` group (like Ubuntu 16.04), simply add the user to
+this admin group:
+```
+usermod -aG sudo grader
+```
 
 ## Update all currently installed packages
+
 `apt-get update` - to update the package indexes
+
 `apt-get upgrade` - to actually upgrade the installed packages
 
 If at login the message `*** System restart required ***` is display, run the following
