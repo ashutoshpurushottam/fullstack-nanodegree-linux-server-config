@@ -13,7 +13,7 @@ something else there now, but what follows would apply when setting up a new ser
 
 # Configuration changes
 ## Add user
-Add user `grader` with command: `useradd grader`
+Add user `grader` with command: `useradd -m -s /bin/bash grader`
 
 ## Add user grader to sudoers
 Created a file called `grader` in `/etc/sudoers.d` with the contents:
