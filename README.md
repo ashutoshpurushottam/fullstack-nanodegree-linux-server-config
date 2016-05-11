@@ -33,12 +33,10 @@ command to reboot the machine:
 As root user do:
 ```
 mkdir /home/grader/.ssh
-chown grader /home/grader/.ssh
-chgrp grader /home/grader/.ssh
+chown grader:grader /home/grader/.ssh
 chmod 700 /home/grader/.ssh
 cp /root/.ssh/authorized_keys /home/grader/.ssh/
-chown grader /home/grader/.ssh/authorized_keys
-chgrp grader /home/grader/.ssh/authorized_keys
+chown grader:grader /home/grader/.ssh/authorized_keys
 chmod 644 /home/grader/.ssh/authorized_keys
 ```
 
